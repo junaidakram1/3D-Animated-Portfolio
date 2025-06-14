@@ -198,11 +198,11 @@ const Hero = () => {
       </div>
       <div className="bg">
         {/* 3D Distored Sphere*/}
-        <Canvas dpr={[1, 1.5]}>
+        {/* <Canvas dpr={[1, 1.5]}>
           <Suspense fallback="loading...">
             <Shape />
           </Suspense>
-        </Canvas>
+        </Canvas> */}
         <div className="hImg">
           <img src="/doggy.png" alt="" />
         </div>

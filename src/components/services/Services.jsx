@@ -97,9 +97,7 @@ const Services = () => {
           <Counter from={0} to={14} text="Technologies Used" />
         </div>
       </div>
-      <div className="sSection right">
-        <ComputerModelContainer />
-      </div>
+      <div className="sSection right">{/* <ComputerModelContainer /> */}</div>
     </div>
   );
 };
