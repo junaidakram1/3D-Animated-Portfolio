@@ -36,13 +36,6 @@ const projects = [
     desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit...",
     link: "/",
   },
-  {
-    id: 5,
-    img: "/p5.jpg",
-    title: "Animated Portfolio Website",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit...",
-    link: "/",
-  },
 ];
 
 const imgVariants = {

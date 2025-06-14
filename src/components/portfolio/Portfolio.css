@@ -90,8 +90,8 @@
 
 .progress-circle-wrapper {
   position: absolute;
-  top: 40px;
-  left: 20px;
+  top: 30px;
+  left: 10px;
   z-index: 99;
 }
 
