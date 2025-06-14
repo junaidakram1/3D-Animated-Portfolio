@@ -27,6 +27,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  margin-right: 20px;
 }
 
 .hSection {
@@ -193,13 +194,13 @@
 
 @media (max-width: 1280px) {
   .bg {
-    height: 60%;
+    height: 80%;
     top: auto;
     bottom: 0;
   }
 
   .hImg {
-    height: 100%;
+    height: 80%;
   }
 
   .hTitle {
@@ -218,7 +219,7 @@
 
 @media (max-width: 1024px) {
   .bg {
-    height: 50%;
+    height: 70%;
   }
 
   .hTitle {
@@ -246,7 +247,7 @@
   }
 
   .hTitle {
-    font-size: 48px;
+    font-size: 72px;
   }
 
   .awards {
@@ -263,7 +264,8 @@
 
   .follow,
   .bubbleContainer,
-  .certificate {
+  .certificate,
+  .arrow {
     display: none;
   }
 }
