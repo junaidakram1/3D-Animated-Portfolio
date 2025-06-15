@@ -11,28 +11,28 @@ const App = () => {
     <div className="container">
       <Suspense fallback={"Loading!"}>
         <LazyLoad height={"100vh"} offset={-100}>
-          <section id="#home">
+          <section id="home">
             <Hero />
           </section>
         </LazyLoad>
       </Suspense>
       <Suspense fallback={"Loading!"}>
         <LazyLoad height={"100vh"} offset={-100}>
-          <section id="#services">
+          <section id="services">
             <Services />
           </section>{" "}
         </LazyLoad>
       </Suspense>
       <Suspense fallback={"Loading!"}>
         <LazyLoad height={"100vh"} offset={-100}>
-          <section id="#portfolio">
+          <section id="portfolio">
             <Portfolio />
           </section>{" "}
         </LazyLoad>
       </Suspense>
       <Suspense fallback={"Loading!"}>
         <LazyLoad height={"100vh"} offset={-100}>
-          <section id="#contact">
+          <section id="contact">
             <Contact />
           </section>{" "}
         </LazyLoad>

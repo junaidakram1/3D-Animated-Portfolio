@@ -1,7 +1,8 @@
 .hero {
   height: 100%;
-  overflow: hidden;
+  /* overflow: hidden; */
   display: flex;
+  overflow-x: hidden;
 }
 
 .bg {
@@ -83,15 +84,15 @@
 .follow {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 6px;
   padding: 16px;
   background-color: #2f204e;
   border-bottom-right-radius: 10px;
 }
 
 .follow img {
-  width: 15px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
 }
 
 .followTextContainer {
@@ -119,6 +120,7 @@
   align-items: end;
   gap: 8px;
   justify-content: end;
+  margin-top: 30px;
 }
 
 .bubble {
@@ -186,6 +188,16 @@
   justify-content: center;
 }
 
+.desktop-only-message {
+  display: none;
+  text-align: center;
+  padding: 10px;
+  font-size: 24px;
+  color: #dd4c62;
+  width: 30%;
+  margin-top: 20px;
+}
+
 @media (max-width: 1536px) {
   .hTitle {
     font-size: 72px;
@@ -229,7 +241,11 @@
 
 @media (max-width: 768px) {
   .hero {
-    flex-direction: column;
+    display: none;
+  }
+
+  .desktop-only-message {
+    display: block;
   }
 
   .bg {
@@ -247,7 +263,11 @@
   }
 
   .hTitle {
-    font-size: 72px;
+    font-size: 28px;
+    margin-top: 20px;
+  }
+  .hImg {
+    display: none;
   }
 
   .awards {

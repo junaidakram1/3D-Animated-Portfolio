@@ -56,8 +56,13 @@ label {
   color: white;
   padding: 20px;
   border: none;
-  border-radius: 10px;
+  border-radius: 12px;
   cursor: pointer;
+  font-size: 18px;
+}
+
+.formButton:hover {
+  background-color: #dd4c62be;
 }
 
 @media (max-width: 1280px) {
@@ -74,6 +79,7 @@ label {
 
 @media (max-width: 768px) {
   .contact {
+    display: none;
     flex-direction: column;
   }
 

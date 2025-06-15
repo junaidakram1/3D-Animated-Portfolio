@@ -73,11 +73,12 @@
   color: white;
   font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease-in-out;
   width: fit-content;
 }
 
 .text-content button:hover {
+  transform: scale(1.05);
   background-color: rgba(255, 192, 203, 0.333);
 }
 
@@ -86,6 +87,7 @@
   display: flex;
   justify-content: center;
   gap: 30px;
+  /* cursor: pointer; */
 }
 
 .progress-circle-wrapper {
@@ -112,6 +114,9 @@
 }
 
 @media (max-width: 768px) {
+  .portfolio-container {
+    display: none;
+  }
   .slider {
     height: 350px;
   }

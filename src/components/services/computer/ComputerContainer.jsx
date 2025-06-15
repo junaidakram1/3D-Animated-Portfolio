@@ -5,7 +5,7 @@ import { OrbitControls, PerspectiveCamera, Stage } from "@react-three/drei";
 
 const ComputerModelContainer = () => {
   return (
-    <Canvas>
+    <Canvas shadows={false}>
       <PerspectiveCamera position={[-1, 0, 1.8]} zoom={0.8} makeDefault />
       <OrbitControls enableZoom={false} autoRotate />
       <Suspense fallback="loading...">
