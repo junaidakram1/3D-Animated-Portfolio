@@ -14,8 +14,8 @@ const projects = [
   {
     id: 2,
     img: "/p4.jpg",
-    title: "E-Commerce App",
-    desc: "Developed a full-stack MERN E-Commerce platform with MaterialUI, Redux Toolkit, Cloudinary (Media Management) featuring a user-friendly experience with advanced product browsing, cart management, and secure Stripe payments, alongside a comprehensive admin panel with detailed analytics, interactive graphs, and real-time management. ",
+    title: "E-Commerce App (DOME)",
+    desc: "Developed a MERN stack E-Commerce platform with MaterialUI, Redux Toolkit, Cloudinary (Media Management) featuring a user-friendly experience with advanced product browsing, cart management, and secure Stripe payments, alongside a comprehensive admin panel with detailed analytics, interactive graphs, and real-time management. ",
     link: "https://github.com/junaidakram1/e-commerce-full-stack",
   },
   {
@@ -78,7 +78,7 @@ const Portfolio = () => {
   const totalProjects = projects.length;
   const [[page, direction], setPage] = useState([0, 0]);
   const ref = useRef(null);
-  const isInView = useInView(ref, { margin: "-400px" });
+  const isInView = useInView(ref, { margin: "-100px" });
 
   const projectIndex = ((page % totalProjects) + totalProjects) % totalProjects;
   const progress = ((projectIndex + 1) / totalProjects) * 100;

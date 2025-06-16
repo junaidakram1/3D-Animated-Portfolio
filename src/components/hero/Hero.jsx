@@ -123,7 +123,11 @@ const Hero = () => {
             animate="animate"
             className="follow"
           >
-            <motion.a variants={followVariants} href="/">
+            <motion.a
+              variants={followVariants}
+              href="https://www.linkedin.com/in/junaid-akram-jd/"
+              target="_blank"
+            >
               <img src="/linked.png" alt="" />
             </motion.a>
             <motion.a
@@ -222,7 +226,9 @@ const Hero = () => {
         <div className="bg">
           {/* 3D Distored Sphere*/}
           <Canvas dpr={[1, 1.5]}>
-            <Suspense fallback="loading...">{/* <Shape /> */}</Suspense>
+            <Suspense fallback="loading...">
+              <Shape />
+            </Suspense>
           </Canvas>
           <div className="hImg">
             <img src="/doggy.png" alt="" />

@@ -1,8 +1,10 @@
 import ComputerModelContainer from "./computer/ComputerContainer";
+import ServerContainer from "./server/ServerContainer";
 import Counter from "./Counter";
 import "./Services.css";
 import { motion, useInView } from "motion/react";
 import { useRef, useState } from "react";
+import EyeContainer from "./eye/EyeContainer";
 
 const textVariants = {
   initial: {
@@ -57,7 +59,7 @@ const services = [
 ];
 
 const Services = () => {
-  // const [currentServiceId, setCurrentServiceId] = useState(1);
+  const [currentServiceId, setCurrentServiceId] = useState(1);
   const ref = useRef();
   const isInView = useInView(ref, { margin: "-200px" });
   return (
@@ -80,7 +82,7 @@ const Services = () => {
               variants={listVariants}
               className="service"
               key={service.id}
-              // onClick={() => setCurrentServiceId(service.id)}
+              onClick={() => setCurrentServiceId(service.id)}
             >
               <div className="serviceIcon">
                 <img src={service.img} alt="" />
@@ -97,7 +99,15 @@ const Services = () => {
           <Counter from={0} to={14} text="Technologies Used" />
         </div>
       </div>
-      <div className="sSection right">{/* <ComputerModelContainer /> */}</div>
+      <div className="sSection right">
+        {currentServiceId === 1 ? (
+          <ComputerModelContainer />
+        ) : currentServiceId === 2 ? (
+          <EyeContainer />
+        ) : (
+          <ServerContainer />
+        )}
+      </div>
     </div>
   );
 };

@@ -12,9 +12,11 @@ const Speech = () => {
         <TypeAnimation
           sequence={[
             1000,
-            "Came for hover effects, Stayed for wiggly 3D shapes.",
+            "I like bending spaces in the browser. Apologies to your CPU.",
             1000,
-            "I like bending spaces in the browser.",
+            "Scroll thrice, and that's all. Wild, I know.",
+            1000,
+            "Came for hover effects, Stayed for wiggly 3D shapes.",
             1000,
           ]}
           wrapper="span"
