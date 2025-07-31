@@ -66,10 +66,10 @@ const Hero = () => {
             animate="animate"
             className="awards"
           >
-            <motion.h2 variants={awardVariants}>Front-End Developer</motion.h2>
+            <motion.h2 variants={awardVariants}>Web Developer</motion.h2>
             <motion.p variants={awardVariants}>
               I'm currently studying Software Engineering at NUST, H-12 ISB.
-              (Third-Year)
+              (Final-Year)
             </motion.p>
             <motion.div variants={awardVariants} className="awardList">
               <motion.img variants={awardVariants} src="/award1.png" alt="" />

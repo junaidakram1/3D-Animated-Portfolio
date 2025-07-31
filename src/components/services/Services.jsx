@@ -95,7 +95,7 @@ const Services = () => {
           ))}
         </motion.div>
         <div className="counterList">
-          <Counter from={0} to={16} text="Projects Completed" />
+          <Counter from={0} to={20} text="Projects Completed" />
           <Counter from={0} to={14} text="Technologies Used" />
         </div>
       </div>
